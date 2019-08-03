@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PersonalAssistantTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-03T23:11:10" hostname="pop-os" time="0.04">
+  <properties/>
+  <testcase name="start" classname="PersonalAssistantTest" time="0.04"/>
+  <system-out><![CDATA[Hello! My name is Sage.
+I was created in 2019.
+]]></system-out>
+  <system-err><![CDATA[Start test 1
+]]></system-err>
+</testsuite>
