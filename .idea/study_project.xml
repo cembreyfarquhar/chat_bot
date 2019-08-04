@@ -237,7 +237,7 @@
           <option name="items">
             <list>
               <FrameworkLesson>
-                <option name="currentTaskIndex" value="2" />
+                <option name="currentTaskIndex" value="3" />
                 <option name="customPresentableName" />
                 <option name="id" value="0" />
                 <option name="index" value="1" />
@@ -371,8 +371,8 @@
                       <option name="id" value="5109" />
                       <option name="index" value="3" />
                       <option name="name" value="Let’s count!" />
-                      <option name="record" value="-1" />
-                      <option name="status" value="Unchecked" />
+                      <option name="record" value="3" />
+                      <option name="status" value="Solved" />
                       <option name="files">
                         <map>
                           <entry key="src/bot/SimpleBot.java">
@@ -430,7 +430,7 @@
                                 <option name="answerPlaceholders">
                                   <list />
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="src/bot/SimpleBot.java" />
                                 <option name="text" value="package bot;&#10;&#10;import java.util.Scanner;&#10;&#10;public class SimpleBot {&#10;    final static Scanner scanner = new Scanner(System.in); // Do not change this line&#10;&#10;    public static void main(String[] args) {&#10;        greet(&quot;Aid&quot;, &quot;2018&quot;); // change it as you need&#10;        remindName();&#10;        guessAge();&#10;        count();&#10;        // ...&#10;        end();&#10;    }&#10;&#10;    static void greet(String assistantName, String birthYear) {&#10;        System.out.println(&quot;Hello! My name is &quot; + assistantName + &quot;.&quot;);&#10;        System.out.println(&quot;I was created in &quot; + birthYear + &quot;.&quot;);&#10;        System.out.println(&quot;Please, remind me your name.&quot;);&#10;    }&#10;&#10;    static void remindName() {&#10;        String name = scanner.nextLine();&#10;        System.out.println(&quot;What a great name you have, &quot; + name + &quot;!&quot;);&#10;    }&#10;&#10;    static void guessAge() {&#10;        System.out.println(&quot;Let me guess your age.&quot;);&#10;        System.out.println(&quot;Say me remainders of dividing your age by 3, 5 and 7.&quot;);&#10;        int rem3 = scanner.nextInt();&#10;        int rem5 = scanner.nextInt();&#10;        int rem7 = scanner.nextInt();&#10;        int age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105;&#10;        System.out.println(&quot;Your age is &quot; + age + &quot;; that's a good time to start programming!&quot;);&#10;    }&#10;&#10;    static void count() {&#10;        System.out.println(&quot;Now I will prove to you that I can count to any number you want.&quot;);&#10;        int num = scanner.nextInt();&#10;        for (int i = 0; i &lt;= num; i++) {&#10;            System.out.printf(&quot;%d!\n&quot;, i);&#10;        }&#10;    }&#10;&#10;    static void test() {&#10;        System.out.println(&quot;Let's test your programming knowledge.&quot;);&#10;        // write your code here&#10;    }&#10;&#10;    static void end() {&#10;        System.out.println(&quot;Congratulations, have a nice day!&quot;); // Do not change this text&#10;    }&#10;}&#10;" />
                                 <option name="trackChanges" value="true" />
