@@ -237,7 +237,7 @@
           <option name="items">
             <list>
               <FrameworkLesson>
-                <option name="currentTaskIndex" value="1" />
+                <option name="currentTaskIndex" value="2" />
                 <option name="customPresentableName" />
                 <option name="id" value="0" />
                 <option name="index" value="1" />
@@ -308,8 +308,8 @@
                       <option name="id" value="5108" />
                       <option name="index" value="2" />
                       <option name="name" value="How old are you?" />
-                      <option name="record" value="-1" />
-                      <option name="status" value="Unchecked" />
+                      <option name="record" value="2" />
+                      <option name="status" value="Solved" />
                       <option name="files">
                         <map>
                           <entry key="src/bot/SimpleBot.java">
@@ -381,7 +381,7 @@
                                 <option name="answerPlaceholders">
                                   <list />
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="src/bot/SimpleBot.java" />
                                 <option name="text" value="package bot;&#10;&#10;import java.util.Scanner;&#10;&#10;public class SimpleBot {&#10;    public static void main(String[] args) {&#10;        Scanner scanner = new Scanner(System.in);&#10;&#10;        System.out.println(&quot;Hello! My name is Aid.&quot;);&#10;        System.out.println(&quot;I was created in 2018.&quot;);&#10;        System.out.println(&quot;Please, remind me your name.&quot;);&#10;&#10;        String name = scanner.nextLine();&#10;&#10;        System.out.println(&quot;What a great name you have, &quot; + name + &quot;!&quot;);&#10;        System.out.println(&quot;Let me guess your age.&quot;);&#10;        System.out.println(&quot;Enter remainders of dividing your age by 3, 5 and 7.&quot;);&#10;&#10;        int rem3 = scanner.nextInt();&#10;        int rem5 = scanner.nextInt();&#10;        int rem7 = scanner.nextInt();&#10;&#10;        int age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105;&#10;&#10;        System.out.println(&quot;Your age is &quot; + age + &quot;; that's a good time to start programming!&quot;);&#10;        System.out.println(&quot;Now I will prove to you that I can count to any number you want.&quot;);&#10;&#10;        // read a number and count to it here&#10;&#10;        System.out.println(&quot;Completed, have a nice day!&quot;);&#10;    }&#10;}&#10;" />
                                 <option name="trackChanges" value="true" />
