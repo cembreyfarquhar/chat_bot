@@ -237,7 +237,7 @@
           <option name="items">
             <list>
               <FrameworkLesson>
-                <option name="currentTaskIndex" value="0" />
+                <option name="currentTaskIndex" value="1" />
                 <option name="customPresentableName" />
                 <option name="id" value="0" />
                 <option name="index" value="1" />
@@ -259,8 +259,8 @@
                       <option name="id" value="5107" />
                       <option name="index" value="1" />
                       <option name="name" value="Hello! What’s your name?" />
-                      <option name="record" value="-1" />
-                      <option name="status" value="Unchecked" />
+                      <option name="record" value="1" />
+                      <option name="status" value="Solved" />
                       <option name="files">
                         <map>
                           <entry key="src/bot/SimpleBot.java">
@@ -269,7 +269,7 @@
                                 <option name="answerPlaceholders">
                                   <list />
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="src/bot/SimpleBot.java" />
                                 <option name="text" value="package bot;&#10;&#10;public class SimpleBot {&#10;    public static void main(String[] args) {&#10;        // write your code here&#10;    }&#10;}&#10;" />
                                 <option name="trackChanges" value="true" />
@@ -318,7 +318,7 @@
                                 <option name="answerPlaceholders">
                                   <list />
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="src/bot/SimpleBot.java" />
                                 <option name="text" value="package bot;&#10;&#10;import java.util.Scanner;&#10;&#10;public class SimpleBot {&#10;    public static void main(String[] args) {&#10;        Scanner scanner = new Scanner(System.in);&#10;&#10;        System.out.println(&quot;Hello! My name is Aid.&quot;);&#10;        System.out.println(&quot;I was created in 2018.&quot;);&#10;        System.out.println(&quot;Please, remind me your name.&quot;);&#10;&#10;        // reading a name&#10;&#10;        System.out.println(&quot;What a great name you have, {yourName}!&quot;);&#10;        System.out.println(&quot;Let me guess your age.&quot;);&#10;        System.out.println(&quot;Enter remainders of dividing your age by 3, 5 and 7.&quot;);&#10;&#10;        // reading all remainders&#10;&#10;        System.out.println(&quot;Your age is {yourAge}; that's a good time to start programming!&quot;);&#10;    }&#10;}&#10;" />
                                 <option name="trackChanges" value="true" />
@@ -337,6 +337,20 @@
                                 <option name="text" value="import bot.SimpleBot;&#10;import org.hyperskill.hstest.v5.stage.BaseStageTest;&#10;import org.hyperskill.hstest.v5.testcase.CheckResult;&#10;import org.hyperskill.hstest.v5.testcase.TestCase;&#10;&#10;import java.util.List;&#10;&#10;&#10;class Clue {&#10;    int age;&#10;    String name;&#10;&#10;    Clue(String name, int age) {&#10;        this.age = age;&#10;        this.name = name;&#10;    }&#10;}&#10;&#10;&#10;public class PersonalAssistantTest extends BaseStageTest&lt;Clue&gt; {&#10;&#10;    public PersonalAssistantTest() {&#10;        super(SimpleBot.class);&#10;    }&#10;&#10;    @Override&#10;    public List&lt;TestCase&lt;Clue&gt;&gt; generate() {&#10;        return List.of(&#10;            new TestCase&lt;Clue&gt;()&#10;                .setInput(&quot;John\n1 2 1&quot;)&#10;                .setAttach(new Clue(&quot;John&quot;, 22)),&#10;&#10;            new TestCase&lt;Clue&gt;()&#10;                .setInput(&quot;Nick\n2 0 0&quot;)&#10;                .setAttach(new Clue(&quot;Nick&quot;, 35))&#10;        );&#10;    }&#10;&#10;    @Override&#10;    public CheckResult check(String reply, Clue clue) {&#10;&#10;        String[] lines = reply.trim().split(&quot;\n&quot;);&#10;&#10;        if (lines.length != 7) {&#10;            return CheckResult.FALSE(&#10;                &quot;You should output 7 lines. Lines found: &quot; + lines.length + &quot;\n&quot; +&#10;                &quot;Your output:\n&quot; +&#10;                reply&#10;            );&#10;        }&#10;&#10;        String lineWithName = lines[3].toLowerCase();&#10;        String name = clue.name.toLowerCase();&#10;&#10;        if (!lineWithName.contains(name)) {&#10;            return CheckResult.FALSE(&#10;                &quot;The name was &quot; + clue.name + &quot;\n&quot; +&#10;                &quot;But the 4-th line was:\n&quot; +&#10;                &quot;\&quot;&quot; + lines[3] + &quot;\&quot;\n\n&quot; +&#10;                &quot;4-th line should contain a name of the user&quot;&#10;            );&#10;        }&#10;&#10;        String lineWithAge = lines[6].toLowerCase();&#10;        String age = Integer.toString(clue.age);&#10;&#10;        if (!lineWithAge.contains(age)) {&#10;            return CheckResult.FALSE(&#10;                &quot;Can't find a correct age &quot; +&#10;                &quot;in the last line of output! &quot; +&#10;                &quot;Maybe you calculated the age wrong?\n\n&quot; +&#10;                &quot;Your last line: \n&quot; + &quot;\&quot;&quot; + lines[6] + &quot;\&quot;&quot;&#10;            );&#10;        }&#10;&#10;        return CheckResult.TRUE;&#10;    }&#10;&#10;}&#10;" />
                                 <option name="trackChanges" value="true" />
                                 <option name="visible" value="false" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="src/bot/Testing.java">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="name" value="src/bot/Testing.java" />
+                                <option name="text" value="" />
+                                <option name="trackChanges" value="true" />
+                                <option name="visible" value="true" />
                               </TaskFile>
                             </value>
                           </entry>
